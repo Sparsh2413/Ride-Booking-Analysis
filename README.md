@@ -27,7 +27,7 @@ This project involves analyzing a large dataset of ride bookings using MySQL, Py
 Performed in-depth analysis using SQL queries to extract insights from the dataset.
 
 #### 🔹 SQL Queries Used:
-(See detailed queries in `SQL_Queries.sql`)
+(See detailed queries in `MySql.sql`)
 
 #### 🔹 SQL Views for Easier Analysis:
 ```sql
@@ -91,6 +91,29 @@ Performed Exploratory Data Analysis (EDA) on the dataset using Python libraries 
    - Scatter plots for ride distance vs booking value.
    - Pie charts for cancellation breakdowns.
 
+4. **Insights & Conclusion:**
+   - **Customer Behavior Insights:**
+     - Top customers contribute significantly to revenue. Implementing loyalty programs can increase retention.
+     - Many users book only once. Discounts for first-time users can improve retention.
+   - **Cancellation Analysis:**
+     - Driver-side cancellations are higher than customer cancellations.
+     - Common cancellation reasons include driver unavailability and high surge pricing.
+   - **Revenue & Distance Trends:**
+     - Premium vehicles generate more revenue per ride, but economy vehicles have a higher booking volume.
+     - Some rides show pricing inconsistencies.
+   - **Driver Performance Analysis:**
+     - Luxury car drivers receive higher ratings, indicating better service quality.
+     - Identifying and rewarding highly-rated drivers can improve service.
+   - **Outlier Detection & Anomalies:**
+     - Some rides have abnormally high prices for short distances, indicating potential billing issues.
+
+📌 **Key Recommendations:**<br>
+1️⃣ Implement loyalty discounts for repeat customers.<br>
+2️⃣ Address driver-side cancellations by optimizing driver allocation.<br>
+3️⃣ Improve fare consistency by analyzing and fixing outliers.<br>
+4️⃣ Reward top-performing drivers to enhance service quality.<br>
+5️⃣ Use fraud detection algorithms to prevent unusual billing discrepancies.<br>
+
 ### 3️⃣ Power BI Dashboard
 Created an interactive dashboard for visualization using Power BI.
 
@@ -101,9 +124,9 @@ Created an interactive dashboard for visualization using Power BI.
    - Created relationships between tables where necessary.
 
 2. **Measures & Calculations (DAX)**
-   - Created **Total Revenue** measure using SUM(Booking_Value).
+   - Created **Total Revenue** measure using `SUM(Booking_Value)`.
    - Created **Cancellation Rate** calculated column for both customer and driver.
-   - Created **Average Ride Distance** measure using AVERAGE(Ride_Distance).
+   - Created **Average Ride Distance** measure using `AVERAGE(Ride_Distance)`.
 
 3. **Dashboard Visuals:**
    - **Total Revenue by Vehicle Type** → Bar chart.
@@ -112,15 +135,12 @@ Created an interactive dashboard for visualization using Power BI.
    - **Booking Trends Over Time** → Line chart.
    - **Ride Distance Distribution** → Histogram.
 
-## 🖼 Screenshots:
-(Include screenshots of Power BI dashboard & Python visualizations)
+🔹 **Check the Power BI Dashboard**: `ride_bookings.pbix`
 
 ## 🎯 Future Improvements:
 - Include predictive modeling for ride demand.
 - Enhance dashboard with real-time data.
 - Automate data pipeline for daily updates.
-
----
 
 This project provides an end-to-end ride booking data analysis with a structured approach using SQL, Python, and Power BI. 📊🚀
 
