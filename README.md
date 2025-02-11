@@ -16,7 +16,7 @@ This project involves analyzing a large dataset of ride bookings using MySQL, Py
 
 ## 📂 Files Included:
 - `MySql.sql`: Deep dive into SQL-based data analysis.
-- `EDA + Visualization--Ridebookings.ipynb`: Exploratory Data Analysis with Python.
+- `EDA + Visualization -- Ridebookings Data (1).ipynb`: Exploratory Data Analysis with Python.
 - `Bookings-100000-Rows-July.csv`: Cleaned and structured data.
 - `ride_bookings.pbix`: Interactive Power BI dashboard.
 - `README.md`: Documentation for project overview.
